@@ -1,14 +1,15 @@
 # Music Website
 
-Hi! This is my project for the descepline "Basics of client development". 
+Hi! This is my project for the discipline "Basics of Client Development".
+
 This is a simple website dedicated to music, where users can explore different genres, facts, quotes, and find out about platforms for streaming. The website is built using HTML, CSS, and JavaScript.
 
 ## Features
 
-- **Homepage:** Introduces the website, provides navigation to different sections and give some general information about music.
-- **About Us Page:** Displays an information about team which developed this website.
-- **Platforms Page:** Lists popular platforms to stream and listen to music and a link to their official sites.
-- **Contact Page:** Shows a form which user can apply if he/she has problems, questions or concerns about some information, desplayed on the website.
+- **Homepage:** Introduces the website, provides navigation to different sections, and gives some general information about music.
+- **About Us Page:** Displays information about the team that developed this website.
+- **Platforms Page:** Lists popular platforms to stream and listen to music and provides links to their official sites.
+- **Contact Page:** Shows a form where users can apply if they have problems, questions, or concerns about some information displayed on the website.
 
 ## Technologies Used
 
@@ -25,6 +26,5 @@ This is a simple website dedicated to music, where users can explore different g
 ## Contributors
 
 - [viksiik](https://github.com/viksiik)
-
 
 Feel free to contribute by submitting bug reports, feature requests, or pull requests!
