@@ -28,3 +28,4 @@ This is a simple website dedicated to music, where users can explore different g
 - [viksiik](https://github.com/viksiik)
 
 Feel free to contribute by submitting bug reports, feature requests, or pull requests!
+Thank you!
