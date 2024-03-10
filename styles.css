@@ -67,6 +67,20 @@ a:active {
     transition: all 0.3s ease 0s;
 }
 
+footer {
+    display: flex;
+    background-color: #657166;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-top: 36px;
+}
+
+.medias {
+    width: 40px;
+}
+
+/* --- HOME PAGE --- */
 .photo {
     height: 750px;
     float: right;
@@ -165,7 +179,6 @@ button:hover {
 .facts ul li {
     list-style: none;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
-    transition: transform 0.5s;
     padding: 5px;
 }
 
@@ -189,15 +202,59 @@ button:hover {
     text-align: center;
 }
 
-footer {
+/* --- ABOUT PAGE --- */
+.main_title_about {
+    font-size: 96px;
     display: flex;
-    background-color: #657166;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 30px 40px;
-    margin-top: 36px;
+    margin-top: 128px;
 }
 
-.medias {
-    width: 40px;
+.main_text_about {
+    width: 500px;
+    text-align: center;
+    padding-left: 420px;
+    margin-bottom: 128px;
+}
+
+.missions {
+    padding: 24px;
+    background-color: #657166;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.missions ol {
+    position: relative;
+    padding: 24px;
+}
+
+.missions ol li {
+    padding: 10px;
+}
+
+.team_table {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_table tr {
+    text-align: center;
+    background-color: white;
+}
+
+.head_name {
+    font-size: 36px;
+    text-align: center;
+    background-color: #FDE8D3;
+}
+
+.pos_text {
+    color: #99CDD8;
 }
