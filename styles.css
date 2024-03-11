@@ -1,10 +1,14 @@
+* {
+    font-family: 'Fredoka', sans-serif;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: #FDE8D3;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
     font-size: 20px;
+    row-gap: 5px;
 }
 
 li, a, button {
@@ -17,6 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 40px;
+    margin: 0;
 }
 
 .logo {
@@ -115,8 +120,13 @@ footer {
 }
 
 h3 {
+    font-size: 22px;
+    color: black;
+    font-style: italic;
+    row-gap: 2px;
     padding-bottom: 24px;
     margin: 0;
+    align-items: center;
 }
 
 .container {
@@ -146,7 +156,7 @@ button {
     background-color: #99CDD8;
     border: none;
     border-radius: 50px;
-    width: 184px;
+    width: 200px;
     height: 48px;
     margin-bottom: 24px;
     transition: transform 0.5s;
@@ -316,3 +326,107 @@ button:hover {
 
 /* --- CONTACT PAGE --- */
 
+#contact_page {
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-painted-whitewash-background_23-2151171148.jpg?t=st=1710172503~exp=1710176103~hmac=14a237558845b7c54937dbd1c1f35a5c77c193461f934fffa0e2217fa7bb0309&w=826);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 128px;
+    padding-bottom: 200px;
+}
+
+
+.cont_container{
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #657166;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	height: 100%;
+    color: white;
+}
+
+.right{
+	padding: 25px 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 90%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    border-radius: 40px;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.main_subtitle_1 {
+    font-size: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 128px;
+    margin: 0;
+}
+
+.cont_us {
+    font-size: 36px;
+}
+
+.adress {
+    color:rgb(184, 255, 255)!important;
+}
