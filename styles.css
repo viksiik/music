@@ -203,7 +203,7 @@ button:hover {
 }
 
 /* --- ABOUT PAGE --- */
-.main_title_about {
+.main_subtitle {
     font-size: 96px;
     display: flex;
     justify-content: center;
@@ -258,3 +258,61 @@ button:hover {
 .pos_text {
     color: #99CDD8;
 }
+
+/* --- PLATFORMS --- */
+.main_subtext {
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.popular {
+    background-color: #657166;
+    color: white;
+    padding-top: 24px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    margin-top: 128px;
+}
+
+.plats_table {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    width: 60%;
+    padding: 24px;
+}
+
+.plats_table a {
+    text-decoration: none;
+    color: black;
+}
+
+.plats_table td {
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+.names {
+    background-color: rgba(101, 113, 102, 0.3);
+}
+
+.subtitle {
+    font-size: 40px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+/* --- CONTACT PAGE --- */
+
