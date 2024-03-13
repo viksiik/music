@@ -162,7 +162,7 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
         padding: 2vh 5vw;
