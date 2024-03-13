@@ -7,8 +7,22 @@ html, body {
     padding: 0;
     background-color: #FDE8D3;
     box-sizing: border-box;
-    font-size: 20px;
-    row-gap: 5px;
+    font-size: 2vh; 
+    row-gap: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 3vw; 
+        row-gap: 1vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html, body {
+        font-size: 4vw;
+        row-gap: 2vw;
+    }
 }
 
 li, a, button {
@@ -20,35 +34,35 @@ header {
     background-color: #657166;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 5vh 6.67vw;
     margin: 0;
 }
 
 .logo {
     margin-right: auto;
-    height: 60px;
+    height: 9vh;
 }
 
 .nav {
     width: 100%;
-    height: 75px;
-    line-height: 75px;
-    padding: 0px 30px;
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 4vw;
 }
 
 a:active {
     background-color: #99CDD8;
-    padding: 20px 30px;
+    padding: 2.67vh 4vw;
     border: none;
-    border-radius: 50px;
+    border-radius: 5vh;
     transition: 0.5s ease;
 }
 
 .active {
     background-color: #99CDD8;
-    padding: 20px 30px;
+    padding: 2.67vh 4vw;
     border: none;
-    border-radius: 50px;
+    border-radius: 5vh;
 }
 
 .nav_links {
@@ -57,7 +71,7 @@ a:active {
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0 2.67vw;
 }
 
 .nav_links li a {
@@ -77,69 +91,71 @@ footer {
     background-color: #657166;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
-    margin-top: 36px;
+    padding: 4vh 5vw; 
+    margin-top: 5.4vh; 
 }
 
 .medias {
-    width: 40px;
+    width: 4vw;
 }
+
 
 /* --- HOME PAGE --- */
 .photo {
-    height: 750px;
+    height: 75vh;
     float: right;
     position: relative;
 }
 
-.main_title{
-    margin-left: 112px;
-    margin-top: 102px;
-    font-size: 96px;
+.main_title {
+    margin-left: 13vw;
+    margin-top: 12vh;
+    font-size: 10vw; 
 }
 
 .main_text {
-    margin-top: 8px;
-    margin-left: 112px;
-    width: 400px;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    margin-bottom: 1vh;
+    width: 40vw;
     position: absolute;
 }
 
 .empty {
     background-color: #657166;
-    height: 256px;
+    height: 25vh;
     width: 100%;
-    margin-top: 356px;
+    margin-top: 35vh;
 }
 
 .acent {
-    font-size: 36px;
+    font-size: 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 2vw;
     color: black;
     font-style: italic;
-    row-gap: 2px;
-    padding-bottom: 24px;
     margin: 0;
-    align-items: center;
+    text-align: center;
+    padding-bottom: 2vh;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 5px 64px;
+    padding: 0.5vh 8vw;
+    gap: 1vw;
 }
 
 .cont {
     background-color: white;
-    width: 288px;
+    width: 28vw;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -147,21 +163,21 @@ h3 {
 }
 
 .top_img {
-    width: 230px;
-    height: 230px;
-    padding: 24px;
+    width: 23vw;
+    height: 23vw;
+    padding: 2vh;
 }
 
 button {
     background-color: #99CDD8;
     border: none;
-    border-radius: 50px;
-    width: 200px;
-    height: 48px;
-    margin-bottom: 24px;
+    border-radius: 5vh;
+    width: 20vw;
+    height: 5vh;
+    margin-bottom: 2.4vh;
     transition: transform 0.5s;
     font-family: 'Fredoka', sans-serif;
-    font-size: 16px;
+    font-size: 1.6vw;
 }
 
 button:hover {
@@ -169,8 +185,8 @@ button:hover {
 }
 
 .facts {
-    margin-top: 24px;
-    padding: 12px;
+    margin-top: 2.4vh;
+    padding: 1.2vh;
     background-color: #657166;
     color: white;
     display: flex;
@@ -183,30 +199,30 @@ button:hover {
     position: relative;
     background-color: white;
     color: black;
-    padding: 24px;
+    padding: 2.4vh;
 }
 
 .facts ul li {
     list-style: none;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
-    padding: 5px;
+    box-shadow: 0 0.5vh 3vh rgba(0, 0, 0, .1);
+    padding: 0.5vh;
 }
 
 .facts ul li span {
-    height: 20px;
-    width: 20px;
+    height: 2.5vh; 
+    width: 2.5vh;
     background: #657166;
     color: black;
     text-align: center;
-    line-height: 20px;
+    line-height: 2.5vh; 
     display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    margin-right: 15px;
+    padding: 0.6vh; 
+    margin: 0.6vh;
+    margin-right: 2.5vw;
 }
 
 .cont_text {
-    width: 200px;
+    width: 20vw;
     padding-top: 0;
     margin-top: 0;
     text-align: center;
@@ -214,22 +230,22 @@ button:hover {
 
 /* --- ABOUT PAGE --- */
 .main_subtitle {
-    font-size: 96px;
+    font-size: 11vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 128px;
+    margin-top: 12.8vh;
 }
 
 .main_text_about {
-    width: 500px;
+    width: 50vw;
     text-align: center;
-    padding-left: 420px;
-    margin-bottom: 128px;
+    padding-left: 42vw;
+    margin-bottom: 12.8vh;
 }
 
 .missions {
-    padding: 24px;
+    padding: 2.4vh;
     background-color: #657166;
     color: white;
     display: flex;
@@ -240,15 +256,15 @@ button:hover {
 
 .missions ol {
     position: relative;
-    padding: 24px;
+    padding: 2.4vh;
 }
 
 .missions ol li {
-    padding: 10px;
+    padding: 1.33vh;
 }
 
 .team_table {
-    margin-top: 36px;
+    margin-top: 4.8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,7 +276,7 @@ button:hover {
 }
 
 .head_name {
-    font-size: 36px;
+    font-size: 4.8vw;
     text-align: center;
     background-color: #FDE8D3;
 }
@@ -271,8 +287,8 @@ button:hover {
 
 /* --- PLATFORMS --- */
 .main_subtext {
-    font-size: 20px;
-    width: 600px;
+    font-size: 1.33vw;
+    width: 60vw;
     text-align: center;
     margin: 0 auto;
 }
@@ -280,13 +296,13 @@ button:hover {
 .popular {
     background-color: #657166;
     color: white;
-    padding-top: 24px;
+    padding-top: 2.67vh;
     display: flex;
     align-self: center;
     justify-content: center;
     flex-direction: column;
-    padding: 24px;
-    margin-top: 128px;
+    padding: 2.67vh;
+    margin-top: 12.8vh;
 }
 
 .plats_table {
@@ -295,8 +311,8 @@ button:hover {
     justify-content: center;
     background-color: white;
     color: black;
-    width: 60%;
-    padding: 24px;
+    width: 60vw;
+    padding: 2.67vh;
 }
 
 .plats_table a {
@@ -305,10 +321,10 @@ button:hover {
 }
 
 .plats_table td {
-    width: 300px;
+    width: 20vw;
     text-align: center;
-    border: 1px solid black;
-    padding: 15px;
+    border: 0.067vw solid black;
+    padding: 1.5vh;
     border-collapse: collapse;
 }
 
@@ -317,23 +333,23 @@ button:hover {
 }
 
 .subtitle {
-    font-size: 40px;
+    font-size: 5.33vw;
     width: 40%;
     text-align: center;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 13.3vh;
 }
+
 
 /* --- CONTACT PAGE --- */
 
 #contact_page {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-painted-whitewash-background_23-2151171148.jpg?t=st=1710172503~exp=1710176103~hmac=14a237558845b7c54937dbd1c1f35a5c77c193461f934fffa0e2217fa7bb0309&w=826);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 128px;
-    padding-bottom: 200px;
+    background-size: 100vw 100vh;
+    padding-top: 12.8vh;
+    padding-bottom: 20vh;
 }
-
 
 .cont_container{
 	position: relative;
@@ -341,18 +357,18 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 2.67vh 13.33vw;
 }
 
 .contact-box{
-	max-width: 850px;
+	max-width: 94.12vw;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	background-color: #657166;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	box-shadow: 0px 0px 1.85vw 0.416vw rgba(0,0,0,0.19);
 }
 
 .left{
@@ -365,16 +381,16 @@ button:hover {
 }
 
 .right{
-	padding: 25px 40px;
+	padding: 2.08vh 5.33vw;
     background-color: white;
-    margin: 20px;
-    border-radius: 30px;
+    margin: 2.67vh;
+    border-radius: 4vw;
 }
 
 h2{
 	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
+	padding: 0 0 1.33vh;
+	margin-bottom: 1.33vh;
 }
 
 h2:after{
@@ -383,22 +399,22 @@ h2:after{
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
+    height: 0.53vh;
+    width: 5.33vw;
+    border-radius: 2.67vw;
     background-color: #2ecc71;
 }
 
 .field{
 	width: 90%;
-	border: 2px solid rgba(0, 0, 0, 0);
+	border: 0.13vw solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
+	padding: 0.67vh 1.33vw;
+	font-size: 1.1vw;
+	margin-bottom: 1.47vh;
 	transition: .3s;
-    border-radius: 40px;
+    border-radius: 2vw;
 }
 
 .field:hover{
@@ -406,25 +422,25 @@ h2:after{
 }
 
 textarea{
-	min-height: 150px;
+	min-height: 11.33vh;
 }
 
 .field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+    border: 0.13vw solid rgba(30,85,250,0.47);
     background-color: #fff;
 }
 
 .main_subtitle_1 {
-    font-size: 96px;
+    font-size: 12.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 128px;
+    padding-top: 12.8vh;
     margin: 0;
 }
 
 .cont_us {
-    font-size: 36px;
+    font-size: 4.8vw;
 }
 
 .adress {
