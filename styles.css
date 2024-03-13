@@ -162,6 +162,16 @@ h3 {
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 2vh 5vw;
+    }
+
+    .cont {
+        width: 50vw;
+    }
+}
 .top_img {
     width: 23vw;
     height: 23vw;
