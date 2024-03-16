@@ -1,18 +1,13 @@
 * {
     font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     background-color: #FDE8D3;
-    box-sizing: border-box;
-    font-size: 1.5em; 
-    row-gap: 1vh;
-}
-
-li, a, button {
-    text-decoration: none;
+    font-size: 1.5em;
 }
 
 header {
@@ -21,34 +16,31 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3vh 4vw;
-    margin: 0;
 }
 
 .logo {
-    margin-right: auto;
-    height: 9vh;
+    height: 6vh;
 }
 
 .nav {
-    width: 100%;
     height: 10vh;
     line-height: 10vh;
     padding: 0 2vw;
 }
 
-a:active {
-    background-color: #99CDD8;
-    padding: 2vh 4vw;
-    border: none;
-    border-radius: 5vh;
-    transition: 0.5s ease;
+a, button {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
 }
 
+a:active,
 .active {
     background-color: #99CDD8;
     padding: 2vh 4vw;
     border: none;
     border-radius: 5vh;
+    transition: background-color 0.5s ease;
 }
 
 .nav_links {
@@ -61,16 +53,8 @@ a:active {
     font-size: 1em;
 }
 
-.nav_links li a {
-    color: white;
-}
-
 .nav_links li a:hover {
     color: #FDE8D3;
-}
-
-.nav_links li a {
-    transition: all 0.3s ease 0s;
 }
 
 footer {
@@ -78,8 +62,8 @@ footer {
     background-color: #657166;
     justify-content: space-between;
     align-items: center;
-    padding: 4vh 5vw; 
-    margin-top: 5vh; 
+    padding: 4vh 5vw;
+    margin-top: 5vh;
 }
 
 .medias {
@@ -232,7 +216,7 @@ button:hover {
 .main_text_about {
     width: 50vw;
     text-align: center;
-    padding-left: 20vw;
+    margin: 0 auto;
     margin-bottom: 12.8vh;
     font-size: 0.5em;
 }
@@ -262,11 +246,16 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 
 .team_table tr {
     text-align: center;
     background-color: white;
+}
+
+.team_table td {
+    padding: 1vh;
 }
 
 .head_name {
@@ -290,12 +279,11 @@ button:hover {
 .popular {
     background-color: #657166;
     color: white;
-    padding-top: 2vh;
+    padding: 2.67vh;
     display: flex;
     align-self: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2.67vh;
     margin-top: 12.8vh;
 }
 
@@ -341,56 +329,56 @@ button:hover {
 #contact_page {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-painted-whitewash-background_23-2151171148.jpg?t=st=1710172503~exp=1710176103~hmac=14a237558845b7c54937dbd1c1f35a5c77c193461f934fffa0e2217fa7bb0309&w=826);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: cover;
     padding-top: 12.8vh;
     padding-bottom: 20vh;
 }
 
-.cont_container{
-	position: relative;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 3vh 13vw;
-}
-
-.contact-box{
-	max-width: 95vw;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background-color: #657166;
-	box-shadow: 0px 0px 1.8vw 0.4vw rgba(0,0,0,0.19);
-}
-
-.left{
+.cont_container {
+    position: relative;
+    height: 100%;
     display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: left;
-	height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 13vw;
+}
+
+.contact-box {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #657166;
+    box-shadow: 0px 0px 1.8vw 0.4vw rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 100%;
     color: white;
 }
 
-.right{
-	padding: 2vh 5vw;
+.right {
+    padding: 2vh 5vw;
     background-color: white;
     margin: 2vh;
     border-radius: 4vw;
 }
 
-h2{
-	position: relative;
-	padding: 0 0 1.33vh;
-	margin-bottom: 1vh;
+h2 {
+    position: relative;
+    padding: 0 0 1.33vh;
+    margin-bottom: 1vh;
     font-size: 1em;
 }
 
-h2:after{
-	content: '';
+h2:after {
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -401,28 +389,28 @@ h2:after{
     background-color: #2ecc71;
 }
 
-.field{
-	width: 90%;
-	border: 0.1vw solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.7vh 1vw;
-	font-size: 0.5em;
-	margin-bottom: 1vh;
-	transition: .3s;
+.field {
+    width: 90%;
+    border: 0.1vw solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.7vh 1vw;
+    font-size: 0.5em;
+    margin-bottom: 1vh;
+    transition: .3s;
     border-radius: 2vw;
 }
 
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-textarea{
-	min-height: 12vh;
+textarea {
+    min-height: 12vh;
 }
 
-.field:focus{
-    border: 0.13vw solid rgba(30,85,250,0.47);
+.field:focus {
+    border: 0.13vw solid rgba(30, 85, 250, 0.47);
     background-color: #fff;
 }
 
@@ -440,18 +428,18 @@ textarea{
 }
 
 .adress {
-    color:rgb(184, 255, 255)!important;
+    color: rgb(184, 255, 255) !important;
 }
 
 #frame {
     border: 2px solid #6f6f6f;
-    
-    width:100vw; 
-    height: 150px; 
-    float:right; 
-    margin-bottom: 10px; 
+    width: 100vw;
+    height: 150px;
+    float: right;
+    margin-bottom: 10px;
     margin-top: 24px;
 }
+
 
 @media only screen and (max-width: 600px) {
     html, body {
