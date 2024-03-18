@@ -8,6 +8,7 @@
 html, body {
     background-color: #FDE8D3;
     font-size: 1.5em;
+    line-height: 1.2;
 }
 
 header {
@@ -15,7 +16,20 @@ header {
     background-color: #657166;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    margin-top: 0;
     padding: 3vh 4vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#main_section {
+    margin-top: 15vw;
+    margin-bottom: 5vw;
+}
+section {
+    margin-top: 10vh;
 }
 
 .logo {
@@ -32,6 +46,14 @@ a, button {
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
+}
+
+a:link {
+    font-weight: 600;
+}
+
+a:visited{
+    color: #fff;
 }
 
 a:active,
@@ -88,10 +110,20 @@ footer {
 .main_text {
     margin-top: 5vh;
     margin-left: 10vw;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
     width: 40vw;
     position: absolute;
     font-size: 0.8em;
+}
+
+.main_text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32%;
+    border: 2px solid #2ecc71;
+    border-radius: 2vh; 
 }
 
 .empty {
@@ -190,9 +222,7 @@ button:hover {
     text-align: center;
     line-height: 2.5vh; 
     display: inline-block;
-    padding: 1vh; 
-    margin: 1vh;
-    margin-right: 2.5vw;
+    margin-right: 2vh;
 }
 
 .cont_text {
@@ -209,7 +239,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12.8vh;
+    margin-top: 20vh;
     margin-bottom: 0;
 }
 
@@ -221,6 +251,14 @@ button:hover {
     font-size: 0.5em;
 }
 
+dl {
+    color: #095127;
+    font-style: italic;
+} 
+
+dd>i {
+    color:#2ecc71;
+}
 .missions {
     padding: 2.4vh;
     background-color: #657166;
@@ -315,6 +353,10 @@ button:hover {
     background-color: rgba(101, 113, 102, 0.3);
 }
 
+.subtitle em + i {
+    color: #095127;
+}
+
 .subtitle {
     font-size: 0.7em;
     width: 40%;
@@ -361,6 +403,7 @@ button:hover {
     text-align: left;
     height: 100%;
     color: white;
+    float: left;
 }
 
 .right {
@@ -439,6 +482,11 @@ textarea {
     margin-bottom: 10px;
     margin-top: 24px;
 }
+
+.contact_table tbody tr:first-child {
+    color:black;
+}
+
 
 
 @media only screen and (max-width: 600px) {
