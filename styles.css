@@ -97,7 +97,7 @@ footer {
 .photo {
     height: 80vh;
     float: right;
-    position: relative;
+ 
 }
 
 .main_title {
@@ -259,6 +259,7 @@ dl {
 dd>i {
     color:#2ecc71;
 }
+
 .missions {
     padding: 2.4vh;
     background-color: #657166;
@@ -344,9 +345,8 @@ dd>i {
 .plats_table td {
     width: 20vw;
     text-align: center;
-    border: 0.1vw solid black;
     padding: 1.5vh;
-    border-collapse: collapse;
+    border: 1px dashed #095127;
 }
 
 .names {
@@ -486,7 +486,6 @@ textarea {
 .contact_table tbody tr:first-child {
     color:black;
 }
-
 
 
 @media only screen and (max-width: 600px) {

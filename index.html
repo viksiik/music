@@ -8,8 +8,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!-- <script>
+        alert("Welcome to Music site! Have fun:3");
+    </script> -->
+        
     <header>
         <img src="images/logo.png" alt="logo" class="logo">
         <nav>
@@ -39,7 +44,7 @@
             <div class="cont">
                 <img src="https://i.scdn.co/image/ab67616d00001e0208f3e7a08eb03064e6eb0af7" alt="pop" class="top_img">
                 <h3 class="acent">Pop</h3>
-                <a href="https://open.spotify.com/playlist/3ZgmfR6lsnCwdffZUan8EA"><button>Listen</button></a>
+                <button id="redirectBtn">Listen</button>
             </div>
             <div class="cont">
                 <img src="https://i.scdn.co/image/ab67616d0000b2730f8a4150cb018ac22531c65c" alt="pop" class="top_img">
@@ -69,7 +74,7 @@
         <h2 class="acent">Largest music festivals</h2>
         <div class="container">
             <div class="cont">
-                <img src="https://cdn11.bigcommerce.com/s-d7wmc7b75m/stencil/12c21480-b4cf-013c-1491-4a9e8de49ee2/e/da7768a0-a2bb-013c-5f1b-66106c2e6377/img/landing-pages/coachella-sweepstakes-mobi.jpg" alt="pop" class="top_img">
+                <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2022/04/28/3bca08e5-ac6e-42f7-ab82-c34a798b9bee_9344ebd2.jpg" alt="pop" class="top_img">
                 <h3 class="acent">Coachella</h3>
                 <p class="cont_text">Average attendance on Mainstage: 500`000</p>
             </div>
@@ -85,6 +90,19 @@
             </div>
         </div>
     </section>
+    <section>
+        <button class="btn" id="formBtn" onclick="ClickOnButton()">Fill form</button>
+    </section>
+    <script>
+        function redirect() {
+            setTimeout(function() {
+                location.href = "https://open.spotify.com/playlist/3ZgmfR6lsnCwdffZUan8EA"; 
+            }, 1000);
+        }
+        var redirectBtn = document.getElementById("redirectBtn");
+
+        redirectBtn.addEventListener("click", redirect);
+    </script>
     <footer>
         <img src="images/logo.png" alt="logo" class="logo">
         <nav>

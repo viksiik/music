@@ -73,7 +73,7 @@
                     <input type="text" class="field" placeholder="Your Email">
                     <input type="text" class="field" placeholder="Phone">
                     <textarea placeholder="Message" class="field"></textarea>
-                    <button class="btn">Send</button>
+                    <button class="btn" id="sendBtn">Send</button>
                 </div>
             </div>
         </div>
@@ -82,5 +82,12 @@
     <main>
         <iframe name="Frame" scrolling="no" src = "thanks.html" id="frame"></iframe>
     </main>
+    <script>
+        var button = document.getElementById("sendBtn");
+
+        button.addEventListener("click", function() {
+            let confirmation = confirm("Are you sure?");
+        });
+    </script>
 </body>
 </html>

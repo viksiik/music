@@ -56,7 +56,7 @@
                 </thead> 
                 <tbody>
                     <tr>
-                        <td colspan="4">
+                        <td colspan="4" id="Developer">
                             <img src="https://cdn-icons-png.flaticon.com/256/3135/3135789.png" width="100" alt="spotify">
                             <p>Name Surname</p>
                             <p class="pos_text">Position</p>
@@ -110,6 +110,8 @@
             </table>
         </div>
     </section>
+    <h3>Інформація про розробника</h4>
+    <div id="developerInfo"></div>
 
     <footer>
         <img src="images/logo.png" alt="logo" class="logo">
@@ -122,5 +124,16 @@
             </ul> 
         </nav>
     </footer>
+    <script>
+        function displayDeveloperInfo(lastName, firstName, position = "student") {
+            var Developer = document.getElementById("Developer");
+
+            Developer.addEventListener("click", function() {
+                var info = "Surname: " + lastName + "<br>Name: " + firstName + "<br>Position: " + position;
+                document.getElementById("developerInfo").innerHTML = info;
+            });
+        }
+        displayDeveloperInfo("Savaryna", "Viktoriia");
+    </script>
 </body>
 </html>
