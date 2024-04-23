@@ -1,7 +1,7 @@
 function ClickOnButton() {
     let choice = true;
-    var name, surname;
-    var age;
+    let name, surname;
+    let age;
 
     while (choice == true) {
         name = prompt("Your name", 'Devid');

@@ -31,7 +31,7 @@
                 <i>Have fun!</i></dd>
         </dl>
     </section>
-    <section>
+    <section id="mission">
         <div class="missions">
             <h2 class="acent">The missions</h2>  
             <ol>
@@ -44,7 +44,7 @@
         </div>
     </section> 
     <section>
-        <div class="team_table">
+        <div class="team_table" id="table">
             <table cellpadding = "25" cellspacing="15">
                 <colgroup>
                     <col style="width:auto"/><col/>
@@ -118,18 +118,57 @@
         <nav>
             <ul class="nav_links">
                 <li>Social media</li>
-                <li><a href="https://www.linkedin.com/in/viktoriia-savaryna"><img src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="ln" class="medias"></a></li>
+                <li><a href="https://www.linkedin.com/in/viktoriia-saletyna"><img src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="ln" class="medias"></a></li>
                 <li><a href="https://github.com/viksiik"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3271892/github-icon-md.png" alt="gh" class="medias"></a></li>
                 <li><a href="https://t.me/viksii_k"><img src="https://www.svgrepo.com/show/360837/telegram.svg" alt="tg" class="medias"></a></li>
             </ul> 
         </nav>
     </footer>
     <script>
+        document.write('<p>This is written dynamically using document.write()</p>');
+
+        let paragraph = document.createElement('p');
+        let textNode = document.createTextNode('This is a dynamically created paragraph.');
+        paragraph.appendChild(textNode);
+        document.body.append(paragraph);
+    
+        let heading = document.createElement('h2');
+        let headingText = document.createTextNode('Dynamic Heading');
+        heading.appendChild(headingText);
+        paragraph.before(heading);
+    
+        let button = document.createElement('button');
+        let buttonText = document.createTextNode('Click Me');
+        button.appendChild(buttonText);
+        heading.after(button);
+
+        let delButton = document.createElement('button');
+        let delButtonText = document.createTextNode('Click Me to Delete');
+        delButton.appendChild(delButtonText);
+        heading.after(delButton);
+    
+        button.addEventListener('click', function() {
+            const newParagraph = document.createElement('p');
+            const newText = document.createTextNode('The paragraph has been changed.');
+            newParagraph.appendChild(newText);
+            paragraph.replaceWith(newParagraph);
+        });        
+    
+        delButton.addEventListener('click', function() {
+            paragraph.remove();
+        });
+
+        const newParagraphs = document.createElement('p');
+        const newText = document.createTextNode('This paragraph is prepended dynamically.');
+        newParagraphs.appendChild(newText);
+        document.body.prepend(newParagraphs);
+    </script>
+    <script>
         function displayDeveloperInfo(lastName, firstName, position = "student") {
-            var Developer = document.getElementById("Developer");
+            let Developer = document.getElementById("Developer");
 
             Developer.addEventListener("click", function() {
-                var info = "Surname: " + lastName + "<br>Name: " + firstName + "<br>Position: " + position;
+                let info = "Surname: " + lastName + "<br>Name: " + firstName + "<br>Position: " + position;
                 document.getElementById("developerInfo").innerHTML = info;
             });
         }

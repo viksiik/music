@@ -11,9 +11,9 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- <script>
+    <script>
         alert("Welcome to Music site! Have fun:3");
-    </script> -->
+    </script>
         
     <header>
         <img src="images/logo.png" alt="logo" class="logo">
@@ -44,17 +44,17 @@
             <div class="cont">
                 <img src="https://i.scdn.co/image/ab67616d00001e0208f3e7a08eb03064e6eb0af7" alt="pop" class="top_img">
                 <h3 class="acent">Pop</h3>
-                <button id="redirectBtn">Listen</button>
+                <button id="redirectBtn" class="btn">Listen</button>
             </div>
             <div class="cont">
                 <img src="https://i.scdn.co/image/ab67616d0000b2730f8a4150cb018ac22531c65c" alt="pop" class="top_img">
                 <h3 class="acent">Rock</h3>
-                <a href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U"><button>Listen</button></a>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U"><button class="btn">Listen</button></a>
             </div>
             <div class="cont">
                 <img src="https://play-lh.googleusercontent.com/KjS2mK6nB8HsT51ylv-ZF7ny5DoU49qk-ibNKZCbix-MAFOeG_xZvFlhbgdv9iVXqkQ" alt="pop" class="top_img">
                 <h3 class="acent">Hip Pop</h3>
-                <a href="https://open.spotify.com/playlist/37i9dQZF1DX48TTZL62Yht"><button>Listen</button></a>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DX48TTZL62Yht"><button class="btn">Listen</button></a>
             </div>
         </div>
     </section>
@@ -99,16 +99,31 @@
                 location.href = "https://open.spotify.com/playlist/3ZgmfR6lsnCwdffZUan8EA"; 
             }, 1000);
         }
-        var redirectBtn = document.getElementById("redirectBtn");
+        let redirectBtn = document.getElementById("redirectBtn");
 
         redirectBtn.addEventListener("click", redirect);
+
+        let buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            console.log(button.textContent);
+          });
+
+        const h3Element = document.querySelector('.cont p');
+
+        console.log('innerHTML:', h3Element.innerHTML);
+        console.log('outerHTML:', h3Element.outerHTML);
+
+        console.log('nodeValue:', h3Element.firstChild.nodeValue);
+        console.log('data:', h3Element.firstChild.data);
+          
+        console.log('textContent:', h3Element.textContent);
     </script>
     <footer>
         <img src="images/logo.png" alt="logo" class="logo">
         <nav>
             <ul class="nav_links">
                 <li>Social media</li>
-                <li><a href="https://www.linkedin.com/in/viktoriia-savaryna"><img src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="ln" class="medias"></a></li>
+                <li><a href="https://www.linkedin.com/in/viktoriia-saletyna"><img src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-2048x2048-np6yltn1.png" alt="ln" class="medias"></a></li>
                 <li><a href="https://github.com/viksiik"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3271892/github-icon-md.png" alt="gh" class="medias"></a></li>
                 <li><a href="https://t.me/viksii_k"><img src="https://www.svgrepo.com/show/360837/telegram.svg" alt="tg" class="medias"></a></li>
             </ul> 
