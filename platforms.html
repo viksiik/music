@@ -21,7 +21,7 @@
 
 </head>
 <body>
-    <script>
+    <!-- <script>
         let number = prompt('How many platforms do you use?', 5);
         if (number != null  ){
             alert("Thank you for response!");
@@ -32,8 +32,7 @@
         setTimeout(function() {
             document.body.style.backgroundColor = "";
         }, 30000);
-
-    </script>
+    </script> -->
     <header>
         <img src="images/logo.png" alt="logo" class="logo">
         <nav>
@@ -102,7 +101,68 @@
             </ul> 
         </nav>
     </footer>
+    <section>
+        <div class="menu">
+            <button data-action="save">Save</button>
+            <button data-action="load">Load</button>
+            <button data-action="search">Search</button>
+            <button  data-toggle-id="counterSection">Show counter</button>
+            <div class="counters" id="counterSection" hidden>
+                <button id="minus" data-counter="decrease"><<</button>
+                <input type="text" id="counterInput" value="1" readonly>
+                <button id="plus" data-counter="increase">>></button>
+            </div>
+        </div>
+    </section> 
+    <script>
+        class Menu {
+            constructor(elem) {
+                this._elem = elem;
+                elem.onclick = this.onClick.bind(this);
+            }
+
+            save() {
+                alert('Save');
+            }
+
+            load() {
+                alert('Load');
+            }
+
+            search() {
+                alert('Search');
+            }
+            
+            onClick(event) {
+                let action = event.target.dataset.action;
+                if (action) {
+                    this[action]();
+                }
+            }
+        }
+        new Menu(document.querySelector('.menu'));
+
+        document.addEventListener('click', function(event) {
+            let id = event.target.dataset.toggleId;
+            if (!id) return;
+            let elem = document.getElementById(id);
+            elem.hidden = !elem.hidden;
+        });
         
-    
+        document.getElementById('counterSection').addEventListener('click', function(event) {
+            if (event.target.hasAttribute('data-counter')) {
+                var counterInput = document.getElementById('counterInput');
+                var currentValue = parseInt(counterInput.value);
+                var action = event.target.getAttribute('data-counter');
+                
+                if (action === 'increase') {
+                    counterInput.value = currentValue + 1;
+                } else if (action === 'decrease' && currentValue > 1) {
+                    counterInput.value = currentValue - 1;
+                }
+            }
+        });
+            
+    </script>
 </body>
 </html>

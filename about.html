@@ -152,11 +152,12 @@
             const newText = document.createTextNode('The paragraph has been changed.');
             newParagraph.appendChild(newText);
             paragraph.replaceWith(newParagraph);
+            paragraph = newParagraph;
         });        
     
         delButton.addEventListener('click', function() {
             paragraph.remove();
-        });
+        });        
 
         const newParagraphs = document.createElement('p');
         const newText = document.createTextNode('This paragraph is prepended dynamically.');
@@ -164,7 +165,7 @@
         document.body.prepend(newParagraphs);
     </script>
     <script>
-        function displayDeveloperInfo(lastName, firstName, position = "student") {
+        function displayDeveloperInfo(lastName, firstName, position) {
             let Developer = document.getElementById("Developer");
 
             Developer.addEventListener("click", function() {

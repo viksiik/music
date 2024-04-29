@@ -505,3 +505,18 @@ textarea {
         width: 50vw;
     }
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#counterInput {
+    width: 128px;
+    font-size: 36px;
+    margin: 36px;
+    padding: 16px;
+    text-align: center;
+}

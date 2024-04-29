@@ -85,9 +85,30 @@
     <script>
         let button = document.getElementById("sendBtn");
 
-        button.addEventListener("click", function() {
+        function formConfirm() {
             let confirmation = confirm("Are you sure?");
-        });
+            if (!confirmation) {
+                alert("Action canceled.");
+            } else {
+                alert("Action confirmed.");
+            }
+        }
+
+        function dataConfirm() {
+            alert("Data sent!");
+        }
+        
+        button.addEventListener("click", formConfirm);
+        button.addEventListener("click", dataConfirm);
+
+        button.addEventListener('click', {
+            handleEvent(event) {
+            alert(event.type + " on " + event.currentTarget);
+            }
+            });
+        
+        button.removeEventListener("click", dataConfirm);
+            
     </script>
 </body>
 </html>

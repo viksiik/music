@@ -61,7 +61,7 @@
     <section>
         <div class="facts">
             <h2 class="acent">Fascinating facts</h2>
-            <ul>
+            <ul id="factList">
                 <li><span>1</span>Music can help you concentrate and work better</li>
                 <li><span>2</span>Singing dissolves stress excellently</li>
                 <li><span>3</span>Babies can listen to music inside the womb</li>
@@ -101,7 +101,7 @@
         }
         let redirectBtn = document.getElementById("redirectBtn");
 
-        redirectBtn.addEventListener("click", redirect);
+        redirectBtn.onclick = redirect;
 
         let buttons = document.querySelectorAll('.btn');
         buttons.forEach(button => {
@@ -117,6 +117,20 @@
         console.log('data:', h3Element.firstChild.data);
           
         console.log('textContent:', h3Element.textContent);
+
+        document.getElementById('factList').onclick = function(event) {
+            let items = document.querySelectorAll('#factList li');
+
+            items.forEach(function(item) {
+                item.style.backgroundColor = '';
+            });
+
+            let clickedItem = event.target.closest('li');
+            if (clickedItem) {
+                clickedItem.style.backgroundColor = '#b1c4b3'; 
+            }
+        };
+
     </script>
     <footer>
         <img src="images/logo.png" alt="logo" class="logo">
