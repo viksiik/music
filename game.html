@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="gamestyle.css">
+    <script src="gamejs.js"></script>
+</head>
+<body>
+    <div id="map">
+        <div class="map-area" id="area1"></div>
+    </div>
+    <p id="hint">Hint: </p>
+
+    <script>
+        let dragElement = document.getElementById('hint');
+        let offsetX, offsetY;
+    
+        dragElement.addEventListener('mousedown', function(event) {
+            offsetX = event.clientX - dragElement.getBoundingClientRect().left;
+            offsetY = event.clientY - dragElement.getBoundingClientRect().top;
+    
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+        });
+    
+        function onMouseMove(event) {
+            let posX = event.clientX - offsetX;
+            let posY = event.clientY - offsetY;
+            dragElement.style.left = posX + 'px';
+            dragElement.style.top = posY + 'px';
+        }
+    
+        function onMouseUp() {
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+        }
+    </script>
+</body>
+</html>

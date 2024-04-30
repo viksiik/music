@@ -1,0 +1,15 @@
+.map-area {
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+#hint {
+    font-size: 36px;
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 750px;
+    background-color: antiquewhite;
+}
